@@ -1,0 +1,42 @@
+#include<iostream>
+using namespace std;
+
+class Humanbeing{
+public:
+string name;
+int age;
+    void mytype(){
+        cout<<"I am Human"<<endl;
+    }
+};
+
+class Male:public Humanbeing{
+public:
+    void gender(){
+        cout<<"My gender is Male"<<endl;
+    }
+
+};
+
+class Female:public Humanbeing{
+public:
+    void gender(){
+        cout<<"My gender is Female"<<endl;
+    }
+
+};
+
+int main(){
+  Male male;
+  Female female;
+
+  male.age=20;
+  male.name="Kshitij";
+  female.name="xyz";
+  female.age="18";
+  cout<<male.age;
+  male.gender();
+  female.gender();
+
+    return 0;
+}
