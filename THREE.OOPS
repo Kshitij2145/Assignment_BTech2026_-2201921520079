@@ -22,6 +22,6 @@ title=s;
 
 int main(){
 MyBook obj;
-obj.setTitle("Math");
-cout<<"The title is "<<obj.getTitle()<<endl;
+obj.setTitle("A tale of two cities");
+cout<<"The title is : "<<obj.getTitle()<<endl;
 }
