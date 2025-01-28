@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+
+class Book{
+
+public:
+string title;
+
+virtual void setTitle( string title)=0;
+string getTitle(){
+    return this->title;
+}
+
+};
+
+class MyBook:public Book{
+public:
+void setTitle (string s){
+title=s;
+}
+};
+
+int main(){
+MyBook obj;
+obj.setTitle("Math");
+cout<<"The title is "<<obj.getTitle()<<endl;
+}
