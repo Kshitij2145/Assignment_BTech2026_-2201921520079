@@ -1,0 +1,57 @@
+// Implement a Student Management System
+// Problem:
+// Create a class Student that has:
+
+// name (string)
+// rollNumber (int)
+// marks (array of 3 subjects)
+// Method to calculate average marks.
+// Method to display student details.
+// Create an array of Student objects and print the details of each student.
+
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int rollNumber;
+    int marks[3]; // Array to store marks of 3 subjects
+
+public:
+    // Constructor to initialize student details
+    Student(string n, int roll, int m1, int m2, int m3) {
+        name = n;
+        rollNumber = roll;
+        marks[0] = m1;
+        marks[1] = m2;
+        marks[2] = m3;
+    }
+
+    // Method to calculate average marks
+    float calculateAverage() {
+        return (marks[0] + marks[1] + marks[2]) / 3.0;
+    }
+
+    // Method to display student details
+    void displayDetails() {
+        cout << "Student Name: " << name << endl;
+        cout << "Roll Number: " << rollNumber << endl;
+        cout << "Marks: " << marks[0] << ", " << marks[1] << ", " << marks[2] << endl;
+        cout << "Average Marks: " << calculateAverage() << endl;
+        cout << "-------------------------" << endl;
+    }
+};
+
+int main(){
+    vector<Student>students;
+    students.push_back(Student("John", 101, 85, 90, 92));
+    students.push_back(Student("Alice", 102, 78, 88, 95));
+    students.push_back(Student("Bob", 103, 92, 85, 88));
+
+    for (int i = 0; i < students.size(); i++) {
+        students[i].displayDetails();
+    }
+}
