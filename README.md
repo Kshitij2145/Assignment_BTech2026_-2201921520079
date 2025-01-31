@@ -108,3 +108,20 @@ SOLUTION-
 
 4-FINALLY WE DISPLAY ALL THE DETAILS OF THE STUDENT OBJECT USING DISPALY METHOD.
 
+
+PROBLEM 6-Write a C++ program to create a class called Triangle that has private member variables for the lengths of its three sides. Implement member functions to determine if the triangle is equilateral, isosceles, or scalene.
+
+
+SOLUTION-
+1-The program defines a Triangle class to determine the type of a triangle based on its three side lengths.
+
+2- It uses a constructor to initialize the side lengths of the triangle.
+
+3- The triangletype() method returns one of the three types of triangles:
+     Equilateral Triangle (all three sides are equal)
+     Isosceles Triangle (two sides are equal)
+     Scalene Triangle (all sides are different)
+
+
+4- The main() function creates a Triangle object with predefined values and prints the triangle type.
+
