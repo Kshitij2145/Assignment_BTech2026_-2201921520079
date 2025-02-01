@@ -125,3 +125,18 @@ SOLUTION-
 
 4- The main() function creates a Triangle object with predefined values and prints the triangle type.
 
+PROBLEM 7-
+Write a C++ program to implement a class called Date that has private member variables for day, month, and year. Include member functions to set and get these variables, as well as to validate if the date is valid.
+
+Solution 7-
+
+This C++ program defines a Date class to handle date-related operations.
+
+It includes member functions to set, retrieve, and validate a date.
+
+The isValidDate() function checks if a given date is valid, considering leap years and month-day constraints.
+
+The main() function takes user input for day, month, and year, then validates and displays the date.
+
+If the date is valid, a confirmation message is displayed; otherwise, an invalid date message is shown.
+
