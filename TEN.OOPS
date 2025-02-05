@@ -1,0 +1,21 @@
+// Write a Player class containing height and weight as attributes.Also this class contains a BMI method which returns an integer BMI of this person.
+
+#include<bits/stdc++.h>
+using namespace std;
+class Player{
+    int height,weight;
+    public:
+    Player(int h,int w){
+        height=h;
+        weight=w;
+    }
+    int calculateBMI(){
+        int BMI = weight/(height*height);
+        return BMI;
+    }
+};
+
+int main(){
+    Player obj(5,54);
+    cout<<obj.calculateBMI();
+}
