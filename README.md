@@ -1,6 +1,6 @@
 # Assignment_BTech2026_-2201921520079
 
-PLATFORM USED-HACKERRANK
+PLATFORM USED-HACKERRANK,CODECHEF
 Language Used-C++
 
 PROBLEM 1-APPLY INHERITANCE ON THE HUMAN BEING CLASS USING OOPS->
@@ -220,4 +220,28 @@ Solution-
 4️- Newcar's copy constructor calls Car(obj), ensuring proper copying of inherited attributes.
 
 5️- Demonstrates correct object copying in inheritance, preventing shallow copy issues.
+
+
+Problem 12-
+Static Balance Tracker
+
+Create a BankAccount class that simulates a simple bank account. The class should have the following features:
+
+A static data member totalBalance to keep track of the total balance across all accounts.
+
+A constructor that takes an initial balance as a parameter and updates totalBalance accordingly.
+
+There are 2 BankAccounts in the Bank. Given the balance of both the accounts as input, create the object using constructor to update totalBalance and print totalBalance of Bank.
+
+SOLUTION-
+
+1- Overview: This program simulates a simple bank account system with a shared total balance across all accounts.
+
+2- Static Data Member: Uses a static variable totalBalance to keep track of the total balance of all accounts.
+
+3- Constructor: Automatically updates totalBalance when a new account is created.
+
+4- Static Method: showTotalBalance() displays the total balance and is accessible without creating an object.
+
+5- Usage: Simply create BankAccount objects with initial balances, and call BankAccount::showTotalBalance() to check the total balance.
 
